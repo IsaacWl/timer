@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <div class="none" id="shadow">
+      <div class="none" id="modal">
+        <h2>&#9202;</h2>
+        <div>
+          <input id="hours-field" type="number" min="0" max="24" value="00" />
+          <input id="minutes-field" type="number" min="0" max="60" value="25" />
+          <input id="seconds-field" type="number" min="0" max="60" value="00" />
+        </div>
+        <div>
+          <button id="cancel" class="button btn-cancel">Cancel</button>
+          <button id="confirm" class="button btn-confirm">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <main
+      class="gap-2 h-screen d-flex flex-align-center flex-justify-center flex-column"
+    >
+      <div class="d-flex flex-justify-center gap-1">
+        <div id="hours">00</div>
+        <div id="minutes">00</div>
+        <div id="seconds">00</div>
+      </div>
+
+      <div class="d-flex flex-justify-center gap-1">
+        <button id="edit" class="button btn-edit">edit</button>
+        <button id="reset" class="button btn-reset">reset</button>
+        <button id="start" class="button btn-start">start</button>
+        <button id="stop" class="button btn-stop none">stop</button>
+      </div>
+    </main>
+  </body>
+</html>
